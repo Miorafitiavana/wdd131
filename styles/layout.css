@@ -4,9 +4,19 @@
   box-sizing: border-box;
 }
 
+:root {
+  --color-navy: #001f3f;       /* Deep navy blue - main base */
+  --color-sky: #3a7bd5;        /* Light sky blue - accent */
+  --color-ocean: #004b8d;      /* Mid-tone blue - secondary */
+  --color-aqua: #6ec1e4;       /* Soft aqua - highlight */
+  --color-sand: #f4e1c1;       /* Warm neutral - background */
+  --color-slate: #2f3e46;      /* Dark gray-blue - text or contrast */
+}
+
 body {
   font-family: Arial, sans-serif;
-  display: grid;
+  display: block;
+  max-width: 800pc;
   min-height: 100vh;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: auto auto 1fr auto;

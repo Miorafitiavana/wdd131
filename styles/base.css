@@ -1,0 +1,163 @@
+:root {
+  --color-navy: #001f3f;       /* Deep navy blue - main base */
+  --color-sky: #3a7bd5;        /* Light sky blue - accent */
+  --color-ocean: #004b8d;      /* Mid-tone blue - secondary */
+  --color-aqua: #c6e8f7;       /* Soft aqua - highlight */
+  --color-sand: #f4e1c1;       /* Warm neutral - background */
+  --color-slate: #2f3e46;      /* Dark gray-blue - text or contrast */
+  --heading-font: "Bree Serif", "Times New Roman", serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Outfit", Helvetica, sans-serif;
+    max-width: auto;
+    display: block;
+    margin: auto;
+}
+
+h1 {
+    font-family: var(--heading-font);
+    font-weight: 500;
+    background: var(--color-navy)
+}
+
+h2, h3 {
+ font-family: var(--heading-font);
+    font-weight: 500;
+    color: #000;
+}
+
+header {
+    background: var(--blue-color);
+    display: block;
+    margin: 0 auto;
+    font-size: 1rem;
+    font-family: var(--heading-font);
+    padding: 1rem;
+    text-align: center; 
+    color: #f4e1c1;
+}
+
+nav {
+    background: var(--color-ocean);
+    margin: 0 auto;
+    color:#fff;
+    display: block;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    flex: 1 1 auto;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+main h1 {
+    grid-column: 1/4;
+    text-align: center;
+    padding: 1rem;
+}
+
+.card {
+    height: 100%;
+    background: var(--color-aqua);
+    border-radius: 20px;
+    box-shadow: #004b8d;
+    padding: 1rem;
+}
+
+.about-content{
+    display: grid;
+    grid-template: auto 1fr auto / 1.5fr 1fr;
+    place-items: center;
+    color: #000;
+}
+
+.location {
+    display: grid;
+    grid-template: auto 1fr auto / 1fr 1fr;
+    place-items: center;
+}
+
+.card h2, h3 {
+    grid-column: 1/3;
+    text-align: center;
+    padding: .5rem;
+    color: var(--color-navy);
+    width: 100%;
+    margin: .5rem;
+   border-bottom: 1px
+    solid #000;
+}
+
+
+.miora-profile {
+    border-radius: 20%;
+    margin: 1rem;
+    border: 10px solid var(--blue-color);
+}
+
+
+.location p {
+    padding: 1rem 2rem 1rem 1rem;
+    text-align: center;
+}
+
+.resources h2 {
+    color: var(--color-navy)
+}
+
+.resources {
+    background: var(--color-sand);
+    padding-top: 2rem;
+    text-align: center;
+    border-radius: 5%;
+}
+
+.resources ul {
+    list-style: none;
+    padding: 2rem;
+}
+
+.resources ul li {
+    padding: .5rem 0;
+}
+
+.resources a, .location a {
+    color: royalblue;
+}
+
+
+footer {
+    background: var(--color-navy);
+    padding: 2rem;
+    text-align: center;
+    color: #f4e1c1;
+}
+
