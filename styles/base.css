@@ -1,12 +1,14 @@
 :root {
-  --color-navy: #001f3f;       /* Deep navy blue - main base */
-  --color-sky: #3a7bd5;        /* Light sky blue - accent */
-  --color-ocean: #004b8d;      /* Mid-tone blue - secondary */
-  --color-aqua: #c6e8f7;       /* Soft aqua - highlight */
-  --color-sand: #f4e1c1;       /* Warm neutral - background */
-  --color-slate: #2f3e46;      /* Dark gray-blue - text or contrast */
-  --heading-font: "Bree Serif", "Times New Roman", serif;
+  --color-navy: #001f3f;      
+  --color-sky: #3a7bd5;        
+  --color-ocean: #004b8d;      
+  --color-aqua: #c6e8f7;       
+  --color-sand: #f4e1c1;       
+  --color-slate: #2f3e46;     
+  --heading-font: "Bree Serif", serif;
+  --body-font: "Outfit", sans-serif;
 }
+
 
 * {
     margin: 0;
@@ -15,7 +17,7 @@
 }
 
 body {
-    font-family: "Outfit", Helvetica, sans-serif;
+    font-family: var(--body-font)
     max-width: auto;
     display: block;
     margin: auto;
@@ -34,13 +36,24 @@ h2, h3 {
 }
 
 header {
-    background: var(--blue-color);
+    background: var(--color-ocean);
     display: block;
     margin: 0 auto;
     font-size: 1rem;
     font-family: var(--heading-font);
     padding: 1rem;
     text-align: center; 
+    color: #f4e1c1;
+
+}
+#course-title {
+    display: block;
+    margin: 0 auto;
+    font-size: 2rem;
+    font-family: var(--heading-font);
+    padding: 1rem;
+    text-align: center;
+    background-color: #001f3f;
     color: #f4e1c1;
 }
 
@@ -62,21 +75,29 @@ nav ul li {
 }
 
 nav a {
-    display: block;
-    color: #fff;
-    text-decoration: none;
-    text-align: center;
-    padding: 1rem;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  padding: 1rem;
+  transition: background 0.3s ease, color 0.3s ease;  
 }
 
 nav a:hover {
-    text-decoration: underline;
+  background: var(--color-sky);   
+  color: var(--color-slate);      
 }
 
+
 main {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  max-width: 1200px;       
+  margin: 0 auto;          
+  gap: 1rem;               
+  padding: 1rem;           
 }
+
 
 main h1 {
     grid-column: 1/4;
@@ -88,7 +109,7 @@ main h1 {
     height: 100%;
     background: var(--color-aqua);
     border-radius: 20px;
-    box-shadow: #004b8d;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
     padding: 1rem;
 }
 
@@ -112,15 +133,15 @@ main h1 {
     color: var(--color-navy);
     width: 100%;
     margin: .5rem;
-   border-bottom: 1px
-    solid #000;
+  border-bottom: 1px solid #000; 
 }
+
 
 
 .miora-profile {
     border-radius: 20%;
     margin: 1rem;
-    border: 10px solid var(--blue-color);
+    border: 2px solid var(--color-ocean);
 }
 
 
@@ -137,7 +158,6 @@ main h1 {
     background: var(--color-sand);
     padding-top: 2rem;
     text-align: center;
-    border-radius: 5%;
 }
 
 .resources ul {
