@@ -150,27 +150,32 @@ main h1 {
     text-align: center;
 }
 
-.resources h2 {
+.card_resources h2 {
     color: var(--color-navy)
 }
 
-.resources {
+.card_resources {
     background: var(--color-sand);
     padding-top: 2rem;
     text-align: center;
 }
 
-.resources ul {
+.card_resources ul {
     list-style: none;
     padding: 2rem;
 }
 
-.resources ul li {
+.card_resources ul li {
     padding: .5rem 0;
 }
 
-.resources a, .location a {
-    color: royalblue;
+
+
+
+.card_resources a, .location a {
+    color: rgb(0,0,139); 
+    text-decoration: none;
+    transition: color 0.3s ease; 
 }
 
 
