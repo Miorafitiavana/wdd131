@@ -27,6 +27,7 @@ h1 {
     font-family: var(--heading-font);
     font-weight: 500;
     background: var(--color-navy)
+    color(srgb red green blue)
 }
 
 h2, h3 {
@@ -44,8 +45,8 @@ header {
     padding: 1rem;
     text-align: center; 
     color: #f4e1c1;
-
 }
+
 #course-title {
     display: block;
     margin: 0 auto;
@@ -150,7 +151,7 @@ main h1 {
     text-align: center;
 }
 
-.card_resources h2 {
+.card h2 {
     color: var(--color-navy)
 }
 
@@ -160,24 +161,21 @@ main h1 {
     text-align: center;
 }
 
-.card_resources ul {
+.card ul {
     list-style: none;
     padding: 2rem;
 }
 
-.card_resources ul li {
+.card ul li {
     padding: .5rem 0;
 }
 
 
-
-
-.card_resources a, .location a {
+.card a, .location a {
     color: rgb(0,0,139); 
     text-decoration: none;
     transition: color 0.3s ease; 
 }
-
 
 footer {
     background: var(--color-navy);
